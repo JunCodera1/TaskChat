@@ -1,0 +1,18 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.home-side-background{
+    -fx-background-color: #FFFFFF;
+}
+.left-side-background{
+    -fx-background-color: #05001D;
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.border{
+    -fx-border-color: #05001D;
+    -fx-border-width: 1.5;
+}
+.right-side-border{
+    -fx-border-color: #05001D;
+    -fx-border-width: 0 1.5 0 0;
+}
