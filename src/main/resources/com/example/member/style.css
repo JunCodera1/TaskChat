@@ -16,3 +16,9 @@
     -fx-border-color: #05001D;
     -fx-border-width: 0 1.5 0 0;
 }
+.dashboard-background{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%,rgba(102,24,166,1) 0%, rgba(0,212,255,1) 100%);
+}
+.white-background{
+    -fx-background-color: '#fff';
+}
