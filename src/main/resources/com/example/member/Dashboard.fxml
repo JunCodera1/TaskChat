@@ -179,7 +179,7 @@
                         </Label>
                         <HBox prefHeight="120.0" prefWidth="200.0" spacing="20.0">
                            <children>
-                              <VBox prefHeight="200.0" prefWidth="260.0" styleClass="card" stylesheets="@dashboard.css">
+                              <VBox prefHeight="200.0" prefWidth="270.0" styleClass="card" stylesheets="@dashboard.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="55.0" prefWidth="279.0">
                                        <children>
@@ -206,11 +206,11 @@
                                     <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                                  </padding>
                               </VBox>
-                              <VBox prefHeight="200.0" prefWidth="260.0" styleClass="card2" stylesheets="@dashboard.css">
+                              <VBox prefHeight="200.0" prefWidth="270.0" styleClass="card" stylesheets="@dashboard.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="55.0" prefWidth="279.0">
                                        <children>
-                                          <Label prefHeight="27.0" prefWidth="352.0" text="TOTAL TODOLIST" textFill="WHITE">
+                                          <Label prefHeight="27.0" prefWidth="352.0" text="TOTAL TODOLIST">
                                              <font>
                                                 <Font size="18.0" />
                                              </font>
@@ -218,12 +218,12 @@
                                           <Pane prefHeight="62.0" prefWidth="230.0" />
                                           <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@icons8-task-list-64.png" />
+                                                <Image url="@icons8-task-list-99.png" />
                                              </image>
                                           </ImageView>
                                        </children>
                                     </HBox>
-                                    <Label prefHeight="72.0" prefWidth="282.0" text="135" textFill="WHITE">
+                                    <Label prefHeight="72.0" prefWidth="282.0" text="135">
                                        <font>
                                           <Font name="System Bold" size="30.0" />
                                        </font>
@@ -233,7 +233,7 @@
                                     <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                                  </padding>
                               </VBox>
-                              <VBox prefHeight="200.0" prefWidth="260.0" styleClass="card" stylesheets="@dashboard.css">
+                              <VBox prefHeight="200.0" prefWidth="270.0" styleClass="card" stylesheets="@dashboard.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="55.0" prefWidth="279.0">
                                        <children>
@@ -260,7 +260,7 @@
                                     <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                                  </padding>
                               </VBox>
-                              <VBox prefHeight="200.0" prefWidth="260.0" styleClass="card" stylesheets="@dashboard.css">
+                              <VBox prefHeight="200.0" prefWidth="270.0" styleClass="card" stylesheets="@dashboard.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="55.0" prefWidth="279.0">
                                        <children>
@@ -291,17 +291,17 @@
                         </HBox>
                      </children>
                   </VBox>
-                  <VBox prefHeight="290.0" prefWidth="100.0" spacing="20.0">
+                  <VBox prefHeight="290.0" prefWidth="100.0" spacing="8.0" styleClass="card" stylesheets="@dashboard.css">
                      <children>
-                        <Label text="Clients">
+                        <Label text="CLIENTS">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
                            <VBox.margin>
-                              <Insets top="20.0" />
+                              <Insets left="20.0" right="20.0" top="20.0" />
                            </VBox.margin>
                         </Label>
-                        <HBox prefHeight="224.0" prefWidth="950.0" spacing="20.0" styleClass="card">
+                        <HBox prefHeight="223.0" prefWidth="1126.0" spacing="35.0" styleClass="card" stylesheets="@dashboard.css">
                            <children>
                               <VBox prefHeight="174.0" prefWidth="190.0">
                                  <children>
@@ -445,7 +445,7 @@
                         <Insets />
                      </VBox.margin>
                      <children>
-                        <VBox prefHeight="170.0" prefWidth="520.0" styleClass="card" stylesheets="@dashboard.css">
+                        <VBox prefHeight="170.0" prefWidth="550.0" styleClass="card" stylesheets="@dashboard.css">
                            <children>
                               <Label prefHeight="27.0" prefWidth="313.0" text="PROGRESS IN COMPLETING GOALS">
                                  <font>
@@ -459,8 +459,8 @@
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Pane prefHeight="38.0" prefWidth="189.0" />
-                                    <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="143.0" text="23%">
+                                    <Pane prefHeight="38.0" prefWidth="290.0" />
+                                    <Label alignment="CENTER" prefHeight="27.0" prefWidth="100.0" text="23%">
                                        <font>
                                           <Font name="System Bold" size="16.0" />
                                        </font>
@@ -474,8 +474,8 @@
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Pane prefHeight="38.0" prefWidth="189.0" />
-                                    <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="143.0" text="72%">
+                                    <Pane prefHeight="38.0" prefWidth="290.0" />
+                                    <Label alignment="CENTER" prefHeight="27.0" prefWidth="100.0" text="72%">
                                        <font>
                                           <Font name="System Bold" size="16.0" />
                                        </font>
@@ -489,8 +489,8 @@
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Pane prefHeight="38.0" prefWidth="189.0" />
-                                    <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="143.0" text="20%">
+                                    <Pane prefHeight="38.0" prefWidth="290.0" />
+                                    <Label alignment="CENTER" prefHeight="27.0" prefWidth="100.0" text="20%">
                                        <font>
                                           <Font name="System Bold" size="16.0" />
                                        </font>
@@ -505,7 +505,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </VBox>
-                        <VBox prefHeight="170.0" prefWidth="520.0" styleClass="card" stylesheets="@dashboard.css">
+                        <VBox prefHeight="170.0" prefWidth="550.0" styleClass="card" stylesheets="@dashboard.css">
                            <children>
                               <Label prefHeight="27.0" prefWidth="313.0" text="DEADLINE">
                                  <font>
@@ -519,7 +519,7 @@
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Pane prefHeight="38.0" prefWidth="189.0" />
+                                    <Pane prefHeight="38.0" prefWidth="230.0" />
                                     <Label alignment="CENTER" prefHeight="27.0" prefWidth="143.0" text="06:02:42">
                                        <font>
                                           <Font name="System Bold" size="16.0" />
@@ -534,7 +534,7 @@
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Pane prefHeight="38.0" prefWidth="189.0" />
+                                    <Pane prefHeight="38.0" prefWidth="230.0" />
                                     <Label alignment="CENTER" prefHeight="27.0" prefWidth="143.0" text="13:35:14">
                                        <font>
                                           <Font name="System Bold" size="16.0" />
@@ -549,7 +549,7 @@
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Pane prefHeight="38.0" prefWidth="189.0" />
+                                    <Pane prefHeight="38.0" prefWidth="230.0" />
                                     <Label alignment="CENTER" prefHeight="27.0" prefWidth="143.0" text="22:45:23">
                                        <font>
                                           <Font name="System Bold" size="16.0" />

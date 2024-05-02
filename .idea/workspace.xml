@@ -5,32 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="793207e7-6ba9-46dd-8113-0eae4be89222" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/Dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/client1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/client2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/client3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/client4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/client5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-bell-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-chat-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-circle-chart-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-community-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-dashboard-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-down-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-project-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-sand-clock-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-sand-clock-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-search-52.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-setting-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-survey-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-task-list-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-todo-list-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/ryou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/Chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/avt1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/avt2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/avt3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/avt4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/avt5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/avt6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-attach-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-laugh-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-menu-60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-phone-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-search-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-send-48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-task-list-99.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/icons8-video-call-50.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/Dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="FxmlFile" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -129,7 +121,9 @@
       <workItem from="1714397350112" duration="2129000" />
       <workItem from="1714442616275" duration="3599000" />
       <workItem from="1714479141208" duration="1922000" />
-      <workItem from="1714492154816" duration="11786000" />
+      <workItem from="1714492154816" duration="15670000" />
+      <workItem from="1714546243956" duration="8520000" />
+      <workItem from="1714557799205" duration="81000" />
     </task>
     <servers />
   </component>
