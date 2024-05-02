@@ -1,6 +1,7 @@
 module com.example.member {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
     opens com.example.member to javafx.fxml;
