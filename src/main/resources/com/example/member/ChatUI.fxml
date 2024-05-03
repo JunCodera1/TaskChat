@@ -14,11 +14,11 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
     <left>
         <VBox alignment="CENTER" prefHeight="800.0" prefWidth="210.0" spacing="5.0" stylesheets="@dashboard.css" BorderPane.alignment="CENTER">
             <children>
-                <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                <HBox fx:id="overviewPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -46,7 +46,7 @@
                         </Label>
                     </children>
                 </HBox>
-                <HBox fx:id="todoBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                <HBox fx:id="todoPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -60,7 +60,7 @@
                         </Label>
                     </children>
                 </HBox>
-                <HBox fx:id="deadlineBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                <HBox fx:id="deadlinePart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -74,7 +74,7 @@
                         </Label>
                     </children>
                 </HBox>
-                <HBox fx:id="insightBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                <HBox fx:id="insightPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -88,7 +88,7 @@
                         </Label>
                     </children>
                 </HBox>
-                <HBox fx:id="accountBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                <HBox fx:id="accountPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -102,7 +102,7 @@
                         </Label>
                     </children>
                 </HBox>
-                <HBox fx:id="settingBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                <HBox fx:id="settingPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -139,7 +139,7 @@
                                         <Image url="@icons8-search-52.png" />
                                     </image>
                                 </ImageView>
-                                <TextField prefHeight="40.0" prefWidth="206.0" promptText="Search" styleClass="transparent" stylesheets="@dashboard.css">
+                                <TextField fx:id="searchPartField" prefHeight="40.0" prefWidth="206.0" promptText="Search" styleClass="transparent" stylesheets="@dashboard.css">
                                     <font>
                                         <Font size="18.0" />
                                     </font>
@@ -158,7 +158,7 @@
                                         <Image url="@ryou.png" />
                                     </image>
                                 </ImageView>
-                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="moreInfoBox" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
                                         <Image url="@icons8-down-50.png" />
                                     </image>
@@ -172,7 +172,7 @@
                 </HBox>
             <BorderPane prefHeight="747.0" prefWidth="1190.0">
                <left>
-                  <VBox prefHeight="746.0" prefWidth="414.0" styleClass="dark-gray-background1" stylesheets="@Chat.css" BorderPane.alignment="CENTER">
+                  <VBox prefHeight="746.0" prefWidth="414.0" styleClass="light-gray-background" stylesheets="@Chat.css" BorderPane.alignment="CENTER">
                      <children>
                         <HBox alignment="CENTER" prefHeight="42.0" prefWidth="200.0" stylesheets="@Chat.css">
                            <children>
@@ -184,7 +184,7 @@
                                     <Insets />
                                  </HBox.margin>
                               </ImageView>
-                              <TextField prefHeight="36.0" prefWidth="266.0" promptText="Search" styleClass="transparent-background" stylesheets="@Chat.css">
+                              <TextField fx:id="searchField" prefHeight="36.0" prefWidth="266.0" promptText="Search" styleClass="transparent-background" stylesheets="@Chat.css">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
@@ -199,181 +199,183 @@
                            </styleClass>
                         </HBox>
                         <Pane prefHeight="2.0" prefWidth="200.0" styleClass="dark-gray-background" stylesheets="@Chat.css" />
-                        <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="362.0">
-                           <children>
-                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@avt2.png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="20.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <VBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="253.0">
+                        <ScrollPane prefHeight="660.0" prefWidth="414.0">
+                           <content>
+                              <Pane prefHeight="659.0" prefWidth="398.0">
                                  <children>
-                                    <Label text="Sakuya Reis" textFill="#0000009c">
-                                       <font>
-                                          <Font name="Ebrima Bold" size="18.0" />
-                                       </font>
-                                    </Label>
-                                    <Label prefHeight="27.0" prefWidth="263.0" text="You: Let's do it! I will see you at 3:00 PM" textFill="#00000077">
-                                       <font>
-                                          <Font name="Ebrima" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <HBox.margin>
-                                    <Insets left="10.0" />
-                                 </HBox.margin>
-                              </VBox>
-                           </children>
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="362.0">
-                           <children>
-                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@avt1.png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="20.0" top="10.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <VBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="251.0">
-                                 <children>
-                                    <Label text="Hourin Ki Ki" textFill="#0000009c">
-                                       <font>
-                                          <Font name="Ebrima Bold" size="18.0" />
-                                       </font>
-                                    </Label>
-                                    <Label prefHeight="27.0" prefWidth="256.0" text="tin" textFill="#00000077">
-                                       <font>
-                                          <Font name="Ebrima Bold" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <HBox.margin>
-                                    <Insets left="10.0" />
-                                 </HBox.margin>
-                              </VBox>
-                              <Pane prefHeight="81.0" prefWidth="90.0">
-                                 <children>
-                                    <Circle fill="#50c984" layoutX="25.0" layoutY="40.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                                    <Label layoutX="21.0" layoutY="32.0" text="1" textFill="WHITE" />
+                                    <HBox alignment="CENTER_LEFT" layoutX="29.0" layoutY="8.0" prefHeight="75.0" prefWidth="362.0">
+                                       <children>
+                                          <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@avt2.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="253.0">
+                                             <children>
+                                                <Label text="Sakuya Reis" textFill="#0000009c">
+                                                   <font>
+                                                      <Font name="Ebrima Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="27.0" prefWidth="263.0" text="You: Let's do it! I will see you at 3:00 PM" textFill="#00000077">
+                                                   <font>
+                                                      <Font name="Ebrima" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" layoutX="29.0" layoutY="83.0" prefHeight="75.0" prefWidth="362.0">
+                                       <children>
+                                          <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@avt1.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets left="20.0" top="10.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="251.0">
+                                             <children>
+                                                <Label text="Hourin Ki Ki" textFill="#0000009c">
+                                                   <font>
+                                                      <Font name="Ebrima Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="27.0" prefWidth="256.0" text="tin" textFill="#00000077">
+                                                   <font>
+                                                      <Font name="Ebrima Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <Pane prefHeight="81.0" prefWidth="90.0">
+                                             <children>
+                                                <Circle fill="#50c984" layoutX="25.0" layoutY="40.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                                                <Label layoutX="21.0" layoutY="32.0" text="1" textFill="WHITE" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" layoutX="29.0" layoutY="164.0" prefHeight="75.0" prefWidth="362.0">
+                                       <children>
+                                          <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@avt3.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets left="20.0" top="10.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="251.0">
+                                             <children>
+                                                <Label text="Wibi" textFill="#0000009c">
+                                                   <font>
+                                                      <Font name="Ebrima Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="27.0" prefWidth="256.0" text="play games with me" textFill="#00000077">
+                                                   <font>
+                                                      <Font name="Ebrima Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <Pane prefHeight="81.0" prefWidth="90.0">
+                                             <children>
+                                                <Circle fill="#50c984" layoutX="25.0" layoutY="40.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                                                <Label layoutX="21.0" layoutY="32.0" text="1" textFill="WHITE" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" layoutX="29.0" layoutY="245.0" prefHeight="75.0" prefWidth="362.0">
+                                       <children>
+                                          <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@avt4.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets left="20.0" top="10.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="251.0">
+                                             <children>
+                                                <Label text="Kuro" textFill="#0000009c">
+                                                   <font>
+                                                      <Font name="Ebrima Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="27.0" prefWidth="256.0" text="let's go to the beach" textFill="#00000077">
+                                                   <font>
+                                                      <Font name="Ebrima Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <Pane prefHeight="81.0" prefWidth="90.0">
+                                             <children>
+                                                <Circle fill="#50c984" layoutX="25.0" layoutY="40.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                                                <Label layoutX="21.0" layoutY="32.0" text="3" textFill="WHITE" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" layoutX="29.0" layoutY="326.0" prefHeight="75.0" prefWidth="362.0">
+                                       <children>
+                                          <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@avt5.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets left="20.0" top="10.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="251.0">
+                                             <children>
+                                                <Label text="Tom" textFill="#0000009c">
+                                                   <font>
+                                                      <Font name="Ebrima Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="27.0" prefWidth="256.0" text="Hello, nice to meet you" textFill="#00000077">
+                                                   <font>
+                                                      <Font name="Ebrima Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <Pane prefHeight="81.0" prefWidth="90.0">
+                                             <children>
+                                                <Circle fill="#50c984" layoutX="25.0" layoutY="40.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                                                <Label layoutX="21.0" layoutY="32.0" text="1" textFill="WHITE" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </HBox>
                                  </children>
                               </Pane>
-                           </children>
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="362.0">
-                           <children>
-                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@avt3.png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="20.0" top="10.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <VBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="251.0">
-                                 <children>
-                                    <Label text="Wibi" textFill="#0000009c">
-                                       <font>
-                                          <Font name="Ebrima Bold" size="18.0" />
-                                       </font>
-                                    </Label>
-                                    <Label prefHeight="27.0" prefWidth="256.0" text="play games with me" textFill="#00000077">
-                                       <font>
-                                          <Font name="Ebrima Bold" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <HBox.margin>
-                                    <Insets left="10.0" />
-                                 </HBox.margin>
-                              </VBox>
-                              <Pane prefHeight="81.0" prefWidth="90.0">
-                                 <children>
-                                    <Circle fill="#50c984" layoutX="25.0" layoutY="40.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                                    <Label layoutX="21.0" layoutY="32.0" text="1" textFill="WHITE" />
-                                 </children>
-                              </Pane>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="362.0">
-                           <children>
-                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@avt4.png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="20.0" top="10.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <VBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="251.0">
-                                 <children>
-                                    <Label text="Kuro" textFill="#0000009c">
-                                       <font>
-                                          <Font name="Ebrima Bold" size="18.0" />
-                                       </font>
-                                    </Label>
-                                    <Label prefHeight="27.0" prefWidth="256.0" text="let's go to the beach" textFill="#00000077">
-                                       <font>
-                                          <Font name="Ebrima Bold" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <HBox.margin>
-                                    <Insets left="10.0" />
-                                 </HBox.margin>
-                              </VBox>
-                              <Pane prefHeight="81.0" prefWidth="90.0">
-                                 <children>
-                                    <Circle fill="#50c984" layoutX="25.0" layoutY="40.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                                    <Label layoutX="21.0" layoutY="32.0" text="3" textFill="WHITE" />
-                                 </children>
-                              </Pane>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="362.0">
-                           <children>
-                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@avt5.png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="20.0" top="10.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <VBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="251.0">
-                                 <children>
-                                    <Label text="Tom" textFill="#0000009c">
-                                       <font>
-                                          <Font name="Ebrima Bold" size="18.0" />
-                                       </font>
-                                    </Label>
-                                    <Label prefHeight="27.0" prefWidth="256.0" text="Hello, nice to meet you" textFill="#00000077">
-                                       <font>
-                                          <Font name="Ebrima Bold" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                                 <HBox.margin>
-                                    <Insets left="10.0" />
-                                 </HBox.margin>
-                              </VBox>
-                              <Pane prefHeight="81.0" prefWidth="90.0">
-                                 <children>
-                                    <Circle fill="#50c984" layoutX="25.0" layoutY="40.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                                    <Label layoutX="21.0" layoutY="32.0" text="1" textFill="WHITE" />
-                                 </children>
-                              </Pane>
-                           </children>
-                        </HBox>
+                           </content>
+                        </ScrollPane>
                      </children>
                   </VBox>
                </left>
@@ -404,7 +406,7 @@
                                  </HBox.margin>
                               </Label>
                               <Pane prefHeight="82.0" prefWidth="419.0" />
-                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="phoneBox" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@icons8-phone-50.png" />
                                  </image>
@@ -412,7 +414,7 @@
                                     <Insets left="30.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="videoCallBox" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@icons8-video-call-50.png" />
                                  </image>
@@ -420,7 +422,7 @@
                                     <Insets left="30.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="moreBox" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@icons8-menu-60.png" />
                                  </image>
@@ -500,12 +502,12 @@
                         </ScrollPane>
                         <HBox alignment="CENTER" prefHeight="98.0" prefWidth="775.0">
                            <children>
-                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="emojiBox" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@icons8-laugh-64.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="attachBox" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@icons8-attach-50.png" />
                                  </image>
@@ -513,7 +515,7 @@
                                     <Insets left="10.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <TextField prefHeight="58.0" prefWidth="578.0" promptText="Type something to send..." styleClass="transparent-background" stylesheets="@Chat.css">
+                              <TextField fx:id="messageText" prefHeight="58.0" prefWidth="578.0" promptText="Type something to send..." styleClass="transparent-background" stylesheets="@Chat.css">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
@@ -521,7 +523,7 @@
                                     <Insets left="10.0" />
                                  </HBox.margin>
                               </TextField>
-                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="sendMessage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@icons8-send-48.png" />
                                  </image>
