@@ -2,6 +2,7 @@
 
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
@@ -14,15 +15,15 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChatController">
     <left>
-        <VBox alignment="CENTER" prefHeight="800.0" prefWidth="210.0" spacing="5.0" stylesheets="@dashboard.css" BorderPane.alignment="CENTER">
+        <VBox alignment="CENTER" prefHeight="800.0" prefWidth="210.0" spacing="5.0" stylesheets="@../style/dashboard.css" BorderPane.alignment="CENTER">
             <children>
                 <HBox fx:id="overviewPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@icons8-dashboard-48.png" />
+                                <Image url="@../com/example/member/icons8-dashboard-48.png" />
                             </image>
                         </ImageView>
                         <Label text="Dashboard">
@@ -36,7 +37,7 @@
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@icons8-chat-48.png" />
+                                <Image url="@../com/example/member/icons8-chat-48.png" />
                             </image>
                         </ImageView>
                         <Label text="Message">
@@ -50,7 +51,7 @@
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@icons8-todo-list-64.png" />
+                                <Image url="@../com/example/member/icons8-todo-list-64.png" />
                             </image>
                         </ImageView>
                         <Label text="Todolist">
@@ -64,7 +65,7 @@
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@icons8-sand-clock-50.png" />
+                                <Image url="@../com/example/member/icons8-sand-clock-50.png" />
                             </image>
                         </ImageView>
                         <Label text="Deadline">
@@ -78,7 +79,7 @@
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@icons8-circle-chart-50.png" />
+                                <Image url="@../com/example/member/icons8-circle-chart-50.png" />
                             </image>
                         </ImageView>
                         <Label text="Insight">
@@ -92,7 +93,7 @@
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@icons8-user-50.png" />
+                                <Image url="@../com/example/member/icons8-user-50.png" />
                             </image>
                         </ImageView>
                         <Label text="Account">
@@ -106,7 +107,7 @@
                     <children>
                         <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@icons8-setting-50.png" />
+                                <Image url="@../com/example/member/icons8-setting-50.png" />
                             </image>
                         </ImageView>
                         <Label text="Settings">
@@ -129,17 +130,17 @@
     <center>
         <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
             <children>
-                <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="1043.0" spacing="20.0" styleClass="white-background" stylesheets="@dashboard.css">
+                <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="1043.0" spacing="20.0" styleClass="white-background" stylesheets="@../style/dashboard.css">
                     <children>
                         <Pane prefHeight="55.0" prefWidth="258.0" HBox.hgrow="ALWAYS" />
-                        <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="42.0" prefWidth="277.0" styleClass="search-container" stylesheets="@dashboard.css">
+                        <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="42.0" prefWidth="277.0" styleClass="search-container" stylesheets="@../style/dashboard.css">
                             <children>
                                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@icons8-search-52.png" />
+                                        <Image url="@../com/example/member/icons8-search-52.png" />
                                     </image>
                                 </ImageView>
-                                <TextField fx:id="searchPartField" prefHeight="40.0" prefWidth="206.0" promptText="Search" styleClass="transparent" stylesheets="@dashboard.css">
+                                <TextField fx:id="searchPartField" prefHeight="40.0" prefWidth="206.0" promptText="Search" styleClass="transparent" stylesheets="@../style/dashboard.css">
                                     <font>
                                         <Font size="18.0" />
                                     </font>
@@ -148,19 +149,19 @@
                         </HBox>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@icons8-bell-50.png" />
+                                <Image url="@../com/example/member/icons8-bell-50.png" />
                             </image>
                         </ImageView>
                         <HBox alignment="CENTER" spacing="5.0">
                             <children>
                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@ryou.png" />
+                                        <Image url="@../com/example/member/ryou.png" />
                                     </image>
                                 </ImageView>
                                 <ImageView fx:id="moreInfoBox" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@icons8-down-50.png" />
+                                        <Image url="@../com/example/member/icons8-down-50.png" />
                                     </image>
                                 </ImageView>
                             </children>
@@ -172,19 +173,19 @@
                 </HBox>
             <BorderPane prefHeight="747.0" prefWidth="1190.0">
                <left>
-                  <VBox prefHeight="746.0" prefWidth="414.0" styleClass="light-gray-background" stylesheets="@Chat.css" BorderPane.alignment="CENTER">
+                  <VBox prefHeight="746.0" prefWidth="414.0" styleClass="light-gray-background" stylesheets="@../style/Chat.css" BorderPane.alignment="CENTER">
                      <children>
-                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="200.0" stylesheets="@Chat.css">
+                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="200.0" stylesheets="@../style/Chat.css">
                            <children>
                               <ImageView fitHeight="26.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icons8-search-50.png" />
+                                    <Image url="@../com/example/member/icons8-search-50.png" />
                                  </image>
                                  <HBox.margin>
                                     <Insets />
                                  </HBox.margin>
                               </ImageView>
-                              <TextField fx:id="searchField" prefHeight="36.0" prefWidth="266.0" promptText="Search" styleClass="transparent-background" stylesheets="@Chat.css">
+                              <TextField fx:id="searchField" prefHeight="36.0" prefWidth="266.0" promptText="Search" styleClass="transparent-background" stylesheets="@../style/Chat.css">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
@@ -198,7 +199,7 @@
                               <String fx:value="radius" />
                            </styleClass>
                         </HBox>
-                        <Pane prefHeight="2.0" prefWidth="200.0" styleClass="dark-gray-background" stylesheets="@Chat.css" />
+                        <Pane prefHeight="2.0" prefWidth="200.0" styleClass="dark-gray-background" stylesheets="@../style/Chat.css" />
                         <ScrollPane prefHeight="660.0" prefWidth="414.0">
                            <content>
                               <Pane prefHeight="659.0" prefWidth="398.0">
@@ -207,7 +208,7 @@
                                        <children>
                                           <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@avt2.png" />
+                                                <Image url="@../com/example/member/avt2.png" />
                                              </image>
                                              <HBox.margin>
                                                 <Insets left="20.0" />
@@ -236,7 +237,7 @@
                                        <children>
                                           <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@avt1.png" />
+                                                <Image url="@../com/example/member/avt1.png" />
                                              </image>
                                              <HBox.margin>
                                                 <Insets left="20.0" top="10.0" />
@@ -271,7 +272,7 @@
                                        <children>
                                           <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@avt3.png" />
+                                                <Image url="@../com/example/member/avt3.png" />
                                              </image>
                                              <HBox.margin>
                                                 <Insets left="20.0" top="10.0" />
@@ -306,7 +307,7 @@
                                        <children>
                                           <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@avt4.png" />
+                                                <Image url="@../com/example/member/avt4.png" />
                                              </image>
                                              <HBox.margin>
                                                 <Insets left="20.0" top="10.0" />
@@ -341,7 +342,7 @@
                                        <children>
                                           <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@avt5.png" />
+                                                <Image url="@../com/example/member/avt5.png" />
                                              </image>
                                              <HBox.margin>
                                                 <Insets left="20.0" top="10.0" />
@@ -408,7 +409,7 @@
                               <Pane prefHeight="82.0" prefWidth="419.0" />
                               <ImageView fx:id="phoneBox" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icons8-phone-50.png" />
+                                    <Image url="@../com/example/member/icons8-phone-50.png" />
                                  </image>
                                  <HBox.margin>
                                     <Insets left="30.0" />
@@ -416,7 +417,7 @@
                               </ImageView>
                               <ImageView fx:id="videoCallBox" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icons8-video-call-50.png" />
+                                    <Image url="@../com/example/member/icons8-video-call-50.png" />
                                  </image>
                                  <HBox.margin>
                                     <Insets left="30.0" />
@@ -424,7 +425,7 @@
                               </ImageView>
                               <ImageView fx:id="moreBox" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icons8-menu-60.png" />
+                                    <Image url="@../com/example/member/icons8-menu-60.png" />
                                  </image>
                                  <HBox.margin>
                                     <Insets left="30.0" />
@@ -432,90 +433,27 @@
                               </ImageView>
                            </children>
                         </HBox>
-                        <ScrollPane prefHeight="585.0" prefWidth="775.0" styleClass="transparent-background" stylesheets="@Chat.css">
+                        <ScrollPane fx:id="messageScrollPane" prefHeight="585.0" prefWidth="775.0" styleClass="transparent-background" stylesheets="@../style/Chat.css">
                            <content>
-                              <Pane prefHeight="571.0" prefWidth="774.0" styleClass="light-gray-background" stylesheets="@Chat.css">
-                                 <children>
-                                    <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="9.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@avt2.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label alignment="CENTER" layoutX="79.0" layoutY="17.0" prefHeight="55.0" prefWidth="93.0" styleClass="incoming-bubble" stylesheets="@Chat.css" text="Hi :))" textFill="#00000077">
-                                       <font>
-                                          <Font name="Ebrima" size="18.0" />
-                                       </font>
-                                    </Label>
-                                    <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="684.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@avt6.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label alignment="CENTER" layoutX="581.0" layoutY="87.0" prefHeight="55.0" prefWidth="93.0" styleClass="outgoing-bubble" stylesheets="@Chat.css" text="Nah, Hi :))" textFill="WHITE">
-                                       <font>
-                                          <Font name="Ebrima" size="18.0" />
-                                       </font>
-                                    </Label>
-                                    <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="8.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@avt2.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label alignment="CENTER" layoutX="73.0" layoutY="161.0" prefHeight="55.0" prefWidth="178.0" styleClass="incoming-bubble" stylesheets="@Chat.css" text="Are you free at 3pm?" textFill="#00000077">
-                                       <font>
-                                          <Font name="Ebrima" size="18.0" />
-                                       </font>
-                                    </Label>
-                                    <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="682.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@avt6.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label alignment="CENTER" layoutX="579.0" layoutY="228.0" prefHeight="55.0" prefWidth="93.0" styleClass="outgoing-bubble" stylesheets="@Chat.css" text="Sure!" textFill="WHITE">
-                                       <font>
-                                          <Font name="Ebrima" size="18.0" />
-                                       </font>
-                                    </Label>
-                                    <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@avt2.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label alignment="CENTER" layoutX="75.0" layoutY="303.0" prefHeight="55.0" prefWidth="207.0" styleClass="incoming-bubble" stylesheets="@Chat.css" text="Then let's code together!" textFill="#00000077">
-                                       <font>
-                                          <Font name="Ebrima" size="18.0" />
-                                       </font>
-                                    </Label>
-                                    <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="682.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@avt6.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label alignment="CENTER" layoutX="326.0" layoutY="393.0" prefHeight="55.0" prefWidth="346.0" styleClass="outgoing-bubble" stylesheets="@Chat.css" text="Let's do it! I will see you at 3:00 PM" textFill="WHITE">
-                                       <font>
-                                          <Font name="Ebrima" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                              </Pane>
+                              <Pane fx:id="messagePane" prefHeight="571.0" prefWidth="774.0" styleClass="light-gray-background" stylesheets="@../style/Chat.css" />
                            </content>
                         </ScrollPane>
                         <HBox alignment="CENTER" prefHeight="98.0" prefWidth="775.0">
                            <children>
                               <ImageView fx:id="emojiBox" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icons8-laugh-64.png" />
+                                    <Image url="@../com/example/member/icons8-laugh-64.png" />
                                  </image>
                               </ImageView>
                               <ImageView fx:id="attachBox" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@icons8-attach-50.png" />
+                                    <Image url="@../com/example/member/icons8-attach-50.png" />
                                  </image>
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <TextField fx:id="messageText" prefHeight="58.0" prefWidth="578.0" promptText="Type something to send..." styleClass="transparent-background" stylesheets="@Chat.css">
+                              <TextField fx:id="messageTextField" prefHeight="58.0" prefWidth="536.0" promptText="Type something to send..." styleClass="transparent-background" stylesheets="@../style/Chat.css">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
@@ -523,11 +461,11 @@
                                     <Insets left="10.0" />
                                  </HBox.margin>
                               </TextField>
-                              <ImageView fx:id="sendMessage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@icons8-send-48.png" />
-                                 </image>
-                              </ImageView>
+                              <Button fx:id="sendMessage" mnemonicParsing="false" prefHeight="58.0" prefWidth="79.0" text="Send">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
                            </children>
                         </HBox>
                      </children>
