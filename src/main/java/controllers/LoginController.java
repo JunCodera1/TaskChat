@@ -4,13 +4,11 @@ import com.example.member.Main;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -20,7 +18,7 @@ import java.util.ResourceBundle;
 
 import javafx.fxml.FXMLLoader;
 
-public class Controller implements Initializable {
+public class LoginController implements Initializable {
 
     @FXML
     private Button btnClose;
@@ -82,7 +80,7 @@ public class Controller implements Initializable {
     private void startHomeWindow() {
         try {
             Stage stage = new Stage();
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Dashboard.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("ChatUI.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             stage.setScene(scene);
             stage.show();
