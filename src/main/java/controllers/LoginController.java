@@ -1,22 +1,31 @@
 package controllers;
 
 import com.example.member.Main;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXMLLoader;
+import javafx.stage.StageStyle;
 
 public class LoginController implements Initializable {
 
@@ -35,6 +44,8 @@ public class LoginController implements Initializable {
 
     @FXML
     private TextField tfUsername;
+    @FXML
+    private ImageView brandingImageView;
 
     private String errorMessage = "";
 
@@ -58,23 +69,13 @@ public class LoginController implements Initializable {
         return isFilled;
     }
 
-    private boolean isValid() {
-        errorMessage = "";
-        boolean isValid = true;
-        if (!tfUsername.getText().equals(Main.USERNAME)) {
-            errorMessage = "Invalid Username!";
-            isValid = false;
-        }
-        if (!pfPassword.getText().equals(Main.PASSWORD)) {
-            if (!errorMessage.isEmpty()) {
-                errorMessage += "\n";
-            }
-            errorMessage += "Invalid Password!";
-            isValid = false;
-        }
 
-        errorMessageLabel.setText(errorMessage);
-        return isValid;
+    public void loginButtonOnAction(ActionEvent event){
+        if(tfUsername.getText().isBlank() == false && pfPassword.getText().isBlank() == false){
+            validateLogin();
+        }else{
+            errorMessageLabel.setText("Please enter username and password");
+        }
     }
 
     private void startHomeWindow() {
@@ -91,20 +92,49 @@ public class LoginController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         btnClose.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
                 System.exit(0);
             }
         });
-        
-        btnLogin.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                if (isFieldsFilled() && isValid()) {
-                    startHomeWindow();
+
+    }
+    public void validateLogin(){
+        DatabaseConnection connectionNow = new DatabaseConnection();
+        Connection connectDB = connectionNow.getConnection();
+        String verifyLogin = "SELECT count(1) FROM user_account WHERE username = '" + tfUsername.getText() + "' AND password ='" + pfPassword.getText() + "'";
+        try{
+
+            Statement statement = connectDB.createStatement();
+            ResultSet queryResult = statement.executeQuery(verifyLogin);
+
+            while(queryResult.next()){
+                if(queryResult.getInt(1) == 1){
+                    errorMessageLabel.setText("Congratulations!");
+                    createAccountForm();
+                }else{
+                    errorMessageLabel.setText("Invalid Login. Please try again!");
                 }
             }
-        });
+
+        }catch (Exception e){
+            e.printStackTrace();
+            e.getCause();
+        }
     }
+    public void createAccountForm(){
+        try{
+            Stage stage = new Stage();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Register.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            stage.setScene(scene);
+            stage.show();
+        }catch(Exception e){
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+
 }
