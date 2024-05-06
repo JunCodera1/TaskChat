@@ -1,4 +1,4 @@
-package Model;
+package controllers;
 
 import controllers.ChatController;
 import javafx.scene.layout.Pane;
