@@ -17,4 +17,6 @@ module com.example.member {
     exports com.example.member;
     exports controllers;
     opens controllers to javafx.fxml;
+    exports Model;
+    opens Model to javafx.fxml;
 }

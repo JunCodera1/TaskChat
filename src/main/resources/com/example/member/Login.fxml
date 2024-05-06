@@ -63,7 +63,7 @@
                </VBox.margin></HBox>
             <HBox prefHeight="45.0" prefWidth="393.0" styleClass="border" stylesheets="@style.css">
                <children>
-                  <Pane prefHeight="35.0" prefWidth="48.0" styleClass="right-side-border" stylesheets="@style.css">
+                  <Pane prefHeight="42.0" prefWidth="44.0" styleClass="right-side-border" stylesheets="@style.css">
                      <children>
                         <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -72,16 +72,7 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <PasswordField fx:id="pfPassword" prefHeight="50.0" prefWidth="301.0" promptText="Password" styleClass="transparent" stylesheets="@style.css" />
-                  <Pane prefHeight="35.0" prefWidth="35.0">
-                     <children>
-                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-1.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icons8-eye-50.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
+                  <PasswordField fx:id="pfPassword" prefHeight="42.0" prefWidth="328.0" promptText="Password" styleClass="transparent" stylesheets="@style.css" />
                </children>
                <VBox.margin>
                   <Insets left="50.0" right="50.0" top="30.0" />
@@ -95,7 +86,7 @@
                   <Font name="Arial" size="18.0" />
                </font>
             </Button>
-            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="18.0" prefWidth="386.0" text="Don't have an account yet? Register now." textFill="#2003ae">
+            <Label fx:id="registertrationLabel" alignment="CENTER" contentDisplay="TOP" onDragDetected="#createAccountForm" onMouseClicked="#createAccountForm" prefHeight="30.0" prefWidth="378.0" text="Don't have an account yet? Register now." textFill="#2003ae">
                <VBox.margin>
                   <Insets left="50.0" right="50.0" top="21.0" />
                </VBox.margin>

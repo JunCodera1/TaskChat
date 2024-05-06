@@ -1,22 +1,22 @@
 package controllers;
 
+import Model.DatabaseConnection;
 import com.example.member.Main;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -25,16 +25,12 @@ import java.sql.Statement;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXMLLoader;
-import javafx.stage.StageStyle;
 
 public class LoginController implements Initializable {
 
     @FXML
     private Button btnClose;
 
-
-    @FXML
-    private Button btnLogin;
 
     @FXML
     private Label errorMessageLabel;
@@ -44,10 +40,11 @@ public class LoginController implements Initializable {
 
     @FXML
     private TextField tfUsername;
-    @FXML
-    private ImageView brandingImageView;
 
     private String errorMessage = "";
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
 
     private boolean isFieldsFilled() {
         errorMessage = "";
@@ -78,16 +75,22 @@ public class LoginController implements Initializable {
         }
     }
 
+
     private void startHomeWindow() {
         try {
             Stage stage = new Stage();
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("ChatUI.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Dashboard.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private void switchChatPart(ActionEvent event){
+        Parent root = FXMLLoader.load(getClass().getResource("ChatUI.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
     }
 
     @Override
@@ -113,7 +116,7 @@ public class LoginController implements Initializable {
             while(queryResult.next()){
                 if(queryResult.getInt(1) == 1){
                     errorMessageLabel.setText("Congratulations!");
-                    createAccountForm();
+                    startHomeWindow();
                 }else{
                     errorMessageLabel.setText("Invalid Login. Please try again!");
                 }

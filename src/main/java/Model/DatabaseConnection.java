@@ -1,4 +1,4 @@
-package controllers;
+package Model;
 import java.security.AlgorithmConstraints;
 import java.sql.*;
 

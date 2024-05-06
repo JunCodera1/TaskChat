@@ -1,5 +1,6 @@
-package controllers;
+package Model;
 
+import controllers.ChatController;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 

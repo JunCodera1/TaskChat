@@ -1,5 +1,6 @@
 package controllers;
 
+import Model.DatabaseConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -10,7 +11,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
-import java.io.File;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.Statement;

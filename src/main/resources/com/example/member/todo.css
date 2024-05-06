@@ -8,3 +8,6 @@
 .textinput{
     -fx-background-color: #666666;
 }
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
