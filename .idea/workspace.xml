@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="793207e7-6ba9-46dd-8113-0eae4be89222" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/ControllerConvertPart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/todolist.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/Dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="793207e7-6ba9-46dd-8113-0eae4be89222" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,6 +147,7 @@
       <workItem from="1714974957737" duration="6342000" />
       <workItem from="1714994922369" duration="3595000" />
       <workItem from="1714998558125" duration="2356000" />
+      <workItem from="1715017168500" duration="8000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
