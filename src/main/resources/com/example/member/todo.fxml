@@ -36,7 +36,7 @@
                         </Label>
                     </children>
                 </HBox>
-            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent" stylesheets="@todo.css">
+            <Button fx:id="btnMessagePart" mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent" stylesheets="@todo.css">
                <graphic>
                       <HBox fx:id="messageBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
                           <children>
@@ -54,9 +54,9 @@
                       </HBox>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent" stylesheets="@todo.css">
+            <Button fx:id="btnToDoPart" mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent" stylesheets="@todo.css">
                <graphic>
-                      <HBox fx:id="todoPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
                           <children>
                               <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                                   <image>

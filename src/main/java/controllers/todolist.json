@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Write ToDoList Persistence Blog",
+    "category": "RELAX",
+    "date": [2022, 12, 4]
+  },
+  {
+    "name": "Eat Dinner",
+    "category": "EAT",
+    "date": [2022, 12, 4]
+  }
+]

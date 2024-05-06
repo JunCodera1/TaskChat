@@ -1,16 +1,15 @@
 package controllers;
 
-import Model.Server;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 
 
@@ -26,25 +25,7 @@ import java.net.ServerSocket;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ChatController {
-
-    @FXML
-    private HBox accountPart;
-
-    @FXML
-    private ImageView attachBox;
-
-    @FXML
-    private HBox deadlinePart;
-
-    @FXML
-    private ImageView emojiBox;
-
-    @FXML
-    private HBox insightPart;
-
-    @FXML
-    private HBox messageBox;
+public class ChatController{
 
     @FXML
     private VBox vBoxMessages;
@@ -56,34 +37,7 @@ public class ChatController {
     private TextField messageTextField;
 
     @FXML
-    private ImageView moreBox;
-
-    @FXML
-    private ImageView moreInfoBox;
-
-    @FXML
-    private HBox overviewPart;
-
-    @FXML
-    private ImageView phoneBox;
-
-    @FXML
-    private TextField searchField;
-
-    @FXML
-    private TextField searchPartField;
-
-    @FXML
     private Button sendMessage;
-
-    @FXML
-    private HBox settingPart;
-
-    @FXML
-    private HBox todoPart;
-
-    @FXML
-    private ImageView videoCallBox;
 
     private Server server;
 
@@ -142,7 +96,7 @@ public class ChatController {
         Text text = new Text(messageFromClient);
         TextFlow textFlow = new TextFlow(text);
         textFlow.setStyle("-fx-background-color: rgb(233, 233, 235);"+
-                          "-fx-background-color: rgb(15,125,242)"+
+                          "-fx-background-color: rgb(15,125,242);"+
                           "-fx-background-radius: 20px;");
         textFlow.setPadding(new Insets(5, 10, 5, 10));
         hBox.getChildren().add(textFlow);

@@ -33,90 +33,114 @@
                         </Label>
                     </children>
                 </HBox>
-                <HBox fx:id="messageBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
-                    <children>
-                        <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@icons8-chat-48.png" />
-                            </image>
-                        </ImageView>
-                        <Label text="Message">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Label>
-                    </children>
-                </HBox>
-                <HBox fx:id="todoPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
-                    <children>
-                        <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@icons8-todo-list-64.png" />
-                            </image>
-                        </ImageView>
-                        <Label text="Todolist">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Label>
-                    </children>
-                </HBox>
-                <HBox fx:id="deadlinePart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
-                    <children>
-                        <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@icons8-sand-clock-50.png" />
-                            </image>
-                        </ImageView>
-                        <Label text="Deadline">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Label>
-                    </children>
-                </HBox>
-                <HBox fx:id="insightPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
-                    <children>
-                        <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@icons8-circle-chart-50.png" />
-                            </image>
-                        </ImageView>
-                        <Label text="Insight">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Label>
-                    </children>
-                </HBox>
-                <HBox fx:id="accountPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
-                    <children>
-                        <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@icons8-user-50.png" />
-                            </image>
-                        </ImageView>
-                        <Label text="Account">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Label>
-                    </children>
-                </HBox>
-                <HBox fx:id="settingPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
-                    <children>
-                        <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@icons8-setting-50.png" />
-                            </image>
-                        </ImageView>
-                        <Label text="Settings">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Label>
-                    </children>
-                </HBox>
+            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent-background" stylesheets="@Chat.css">
+               <graphic>
+                      <HBox fx:id="messageBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                          <children>
+                              <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@icons8-chat-48.png" />
+                                  </image>
+                              </ImageView>
+                              <Label text="Message">
+                                  <font>
+                                      <Font size="20.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </HBox>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent-background" stylesheets="@Chat.css">
+               <graphic>
+                      <HBox fx:id="todoPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                          <children>
+                              <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@icons8-todo-list-64.png" />
+                                  </image>
+                              </ImageView>
+                              <Label text="Todolist">
+                                  <font>
+                                      <Font size="20.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </HBox>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent-background" stylesheets="@Chat.css">
+               <graphic>
+                      <HBox fx:id="deadlinePart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                          <children>
+                              <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@icons8-sand-clock-50.png" />
+                                  </image>
+                              </ImageView>
+                              <Label text="Deadline">
+                                  <font>
+                                      <Font size="20.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </HBox>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent-background" stylesheets="@Chat.css">
+               <graphic>
+                      <HBox fx:id="insightPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                          <children>
+                              <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@icons8-circle-chart-50.png" />
+                                  </image>
+                              </ImageView>
+                              <Label text="Insight">
+                                  <font>
+                                      <Font size="20.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </HBox>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent-background" stylesheets="@Chat.css">
+               <graphic>
+                      <HBox fx:id="accountPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                          <children>
+                              <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@icons8-user-50.png" />
+                                  </image>
+                              </ImageView>
+                              <Label text="Account">
+                                  <font>
+                                      <Font size="20.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </HBox>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent-background" stylesheets="@Chat.css">
+               <graphic>
+                      <HBox fx:id="settingPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                          <children>
+                              <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@icons8-setting-50.png" />
+                                  </image>
+                              </ImageView>
+                              <Label text="Settings">
+                                  <font>
+                                      <Font size="20.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </HBox>
+               </graphic>
+            </Button>
             </children>
             <padding>
                 <Insets left="20.0" right="20.0" />

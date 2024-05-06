@@ -42,9 +42,7 @@ public class LoginController implements Initializable {
     private TextField tfUsername;
 
     private String errorMessage = "";
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
+
 
     private boolean isFieldsFilled() {
         errorMessage = "";
@@ -88,10 +86,6 @@ public class LoginController implements Initializable {
         }
     }
 
-    private void switchChatPart(ActionEvent event){
-        Parent root = FXMLLoader.load(getClass().getResource("ChatUI.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
