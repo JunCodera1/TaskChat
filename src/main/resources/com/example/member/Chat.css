@@ -24,3 +24,6 @@
     -fx-background-color: #50C984;
     -fx-background-radius: 20px;
 }
+.user-chat:hover{
+    -fx-background-color: rgba(77, 76, 76, 0.95);
+}
