@@ -187,7 +187,7 @@
                         <Label prefHeight="18.0" prefWidth="77.0" text="    Date: " />
                         <DatePicker fx:id="todoDate" prefHeight="26.0" prefWidth="291.0" />
                     </HBox>
-                    <TableView fx:id="todoList" prefHeight="488.0" prefWidth="1150.0">
+                    <TableView fx:id="todoList" prefHeight="494.0" prefWidth="1150.0">
                         <columns>
                             <TableColumn minWidth="70.40002250671387" prefWidth="376.8000545501709" sortable="true" text="Name">
                                 <cellValueFactory>
