@@ -48,8 +48,7 @@ public class RegisterController implements Initializable {
                 !lastnameTextField.getText().isEmpty()&&
                 !usernameTextField.getText().isEmpty()){
             registerUser();
-            confirmPasswordLabel.setText("You are set");
-            registrationMessageLabel.setText("User has been registered successfully!");
+            confirmPasswordLabel.setText("");
         }else{
             registrationMessageLabel.setText("User has been registered failed!");
             confirmPasswordLabel.setText("Password does not match");
@@ -65,12 +64,23 @@ public class RegisterController implements Initializable {
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connectDB = connectNow.getConnection();
 
-        String firstname = "";
-        String lastname = "";
-        String username = "";
-        String password = "";
+        String firstname = firstnameTextField.getText();
+        String lastname = lastnameTextField.getText();
+        String username = usernameTextField.getText();
+        String password = setPasswordField.getText();
 
-        String insertFields = "";
-        String insertValues = "";
+        String insertFields = "INSERT INTO user_account(firstname, lastname, username, password) VALUES('";
+        String insertValues =  firstname + "', '" + lastname + "', '" +  username + "', '" +  password + "')";
+        String insertToRegister = insertFields + insertValues;
+
+        try{
+            Statement statement = connectDB.createStatement();
+            statement.executeUpdate(insertToRegister);
+            registrationMessageLabel.setText("User has been registered successfully!");
+        }catch (Exception e){
+            e.printStackTrace();
+            e.getCause();
+        }
+
     }
 }

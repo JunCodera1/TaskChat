@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="793207e7-6ba9-46dd-8113-0eae4be89222" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/member/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/member/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/Register.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +138,7 @@
       <workItem from="1714898395298" duration="1272000" />
       <workItem from="1714904935316" duration="151000" />
       <workItem from="1714905228201" duration="1021000" />
-      <workItem from="1714909729009" duration="15171000" />
+      <workItem from="1714909729009" duration="17075000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
