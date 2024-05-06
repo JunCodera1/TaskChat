@@ -12,11 +12,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="880.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="880.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #05001D;">
          <children>
-            <ImageView fitHeight="512.0" fitWidth="386.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="454.0" fitWidth="386.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@2.png" />
                </image></ImageView>
@@ -78,7 +78,7 @@
                   <Insets left="50.0" right="50.0" top="30.0" />
                </VBox.margin>
             </HBox>
-            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="48.0" prefWidth="378.0" styleClass="left-side-background" stylesheets="@style.css" text="Login" textFill="WHITE">
+            <Button fx:id="btnLogin" mnemonicParsing="false" prefHeight="48.0" prefWidth="378.0" styleClass="left-side-background" stylesheets="@style.css" text="Login" textFill="WHITE">
                <VBox.margin>
                   <Insets left="50.0" right="50.0" top="30.0" />
                </VBox.margin>
@@ -86,7 +86,11 @@
                   <Font name="Arial" size="18.0" />
                </font>
             </Button>
+<<<<<<< HEAD
             <Label fx:id="registertrationLabel" alignment="CENTER" contentDisplay="TOP" onDragDetected="#createAccountForm" onMouseClicked="#createAccountForm" prefHeight="30.0" prefWidth="378.0" text="Don't have an account yet? Register now." textFill="#2003ae">
+=======
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="18.0" prefWidth="386.0" text="Forgot password?" textFill="#2003ae">
+>>>>>>> 65265073608efe364f6c98ddf49a58ab689cdcb5
                <VBox.margin>
                   <Insets left="50.0" right="50.0" top="21.0" />
                </VBox.margin>

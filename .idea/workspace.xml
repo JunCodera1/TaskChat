@@ -9,6 +9,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/controllers/DashboardController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/controllers/todolist.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ChatController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" afterDir="false" />
@@ -16,6 +17,10 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/Dashboard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.fxml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/Chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/Chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" afterDir="false" />
+>>>>>>> 65265073608efe364f6c98ddf49a58ab689cdcb5
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +30,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="JavaFXApplication" />
         <option value="CSS File" />
         <option value="FxmlFile" />
+=======
+        <option value="FxmlFile" />
+        <option value="CSS File" />
+>>>>>>> 65265073608efe364f6c98ddf49a58ab689cdcb5
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -56,6 +63,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+<<<<<<< HEAD
     &quot;Application.DatabaseConnection.executor&quot;: &quot;Run&quot;,
     &quot;Application.GreetingClient.executor&quot;: &quot;Run&quot;,
     &quot;Application.GreetingClient2.executor&quot;: &quot;Run&quot;,
@@ -64,38 +72,52 @@
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.PasswordViewer.executor&quot;: &quot;Run&quot;,
     &quot;Application.Server.executor&quot;: &quot;Run&quot;,
+=======
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+>>>>>>> 65265073608efe364f6c98ddf49a58ab689cdcb5
     &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+<<<<<<< HEAD
     &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Java/Jackson/jackson-databind-2.17.0.jar&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Java/DatabaseConnector/mysql-connector-java-8.0.28.jar&quot;,
+>>>>>>> 65265073608efe364f6c98ddf49a58ab689cdcb5
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+<<<<<<< HEAD
     &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.50574714&quot;,
+=======
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+>>>>>>> 65265073608efe364f6c98ddf49a58ab689cdcb5
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="controllers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HP\Member\src\main\resources\com\example\member" />
       <recent name="C:\Users\HP\Member\lib" />
+      <recent name="C:\Users\HP\Member\src\main\resources\com\example\member" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Member\src\main\java\controllers" />
       <recent name="C:\Users\HP\Member\src\main\resources\com\example\member" />
+<<<<<<< HEAD
       <recent name="C:\Users\HP\Member\src\main\resources\FXMLFile" />
       <recent name="C:\Users\HP\Member\src\main\resources\style" />
       <recent name="C:\Users\HP\Member\src\main\resources\views" />
+=======
+>>>>>>> 65265073608efe364f6c98ddf49a58ab689cdcb5
     </key>
   </component>
   <component name="RunManager">
@@ -137,6 +159,7 @@
       <workItem from="1714546243956" duration="8520000" />
       <workItem from="1714557799205" duration="81000" />
       <workItem from="1714573805769" duration="1802000" />
+<<<<<<< HEAD
       <workItem from="1714613224190" duration="4370000" />
       <workItem from="1714623037949" duration="1186000" />
       <workItem from="1714629861722" duration="312000" />
@@ -159,6 +182,9 @@
       <workItem from="1714974957737" duration="6342000" />
       <workItem from="1714994922369" duration="3595000" />
       <workItem from="1714998558125" duration="2356000" />
+=======
+      <workItem from="1714613224190" duration="3799000" />
+>>>>>>> 65265073608efe364f6c98ddf49a58ab689cdcb5
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
