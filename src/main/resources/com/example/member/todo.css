@@ -1,0 +1,10 @@
+.mainFXMLClass{
+    -fx-background-color: #333333;
+}
+.pane{
+    -fx-border-color: #000;
+    -fx-border-radius: 20px;
+}
+.textinput{
+    -fx-background-color: #666666;
+}

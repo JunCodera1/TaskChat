@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="793207e7-6ba9-46dd-8113-0eae4be89222" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/member/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/member/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/TodoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +21,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
-        <option value="CSS File" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -48,33 +52,43 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DatabaseConnection.executor": "Run",
+    "Application.GreetingClient.executor": "Run",
+    "Application.GreetingClient2.executor": "Run",
+    "Application.GreetingServer.executor": "Run",
     "Application.HelloApplication.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.Server.executor": "Run",
     "Application.Unnamed.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Program Files/Java/DatabaseConnector/mysql-connector-java-8.0.28.jar",
+    "last_opened_file_path": "C:/Program Files/Java/Jackson/jackson-databind-2.17.0.jar",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.50574714",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="controllers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HP\Member\lib" />
       <recent name="C:\Users\HP\Member\src\main\resources\com\example\member" />
+      <recent name="C:\Users\HP\Member\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Member\src\main\resources\com\example\member" />
+      <recent name="C:\Users\HP\Member\src\main\resources\style" />
+      <recent name="C:\Users\HP\Member\src\main\resources\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -116,7 +130,26 @@
       <workItem from="1714546243956" duration="8520000" />
       <workItem from="1714557799205" duration="81000" />
       <workItem from="1714573805769" duration="1802000" />
-      <workItem from="1714613224190" duration="3799000" />
+      <workItem from="1714613224190" duration="4370000" />
+      <workItem from="1714623037949" duration="1186000" />
+      <workItem from="1714629861722" duration="312000" />
+      <workItem from="1714634187661" duration="137000" />
+      <workItem from="1714639099966" duration="2035000" />
+      <workItem from="1714641211958" duration="6417000" />
+      <workItem from="1714669488667" duration="302000" />
+      <workItem from="1714697327596" duration="3869000" />
+      <workItem from="1714732659926" duration="852000" />
+      <workItem from="1714742593875" duration="4588000" />
+      <workItem from="1714747598534" duration="2424000" />
+      <workItem from="1714784760560" duration="11973000" />
+      <workItem from="1714823387231" duration="11614000" />
+      <workItem from="1714898395298" duration="1272000" />
+      <workItem from="1714904935316" duration="151000" />
+      <workItem from="1714905228201" duration="1021000" />
+      <workItem from="1714909729009" duration="17075000" />
+      <workItem from="1714964366356" duration="5039000" />
+      <workItem from="1714970113279" duration="1580000" />
+      <workItem from="1714974957737" duration="4544000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />

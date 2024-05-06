@@ -13,8 +13,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Main extends Application {
-    public static final String USERNAME = "Admin";
-    public static final String PASSWORD = "123";
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Login.fxml"));
