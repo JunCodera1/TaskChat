@@ -22,21 +22,25 @@
     <left>
         <VBox alignment="CENTER" prefHeight="800.0" prefWidth="210.0" spacing="5.0" stylesheets="@dashboard.css" BorderPane.alignment="CENTER">
             <children>
-                <HBox fx:id="overviewPart" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
-                    <children>
-                        <ImageView fitHeight="45.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@icons8-dashboard-48.png" />
-                            </image>
-                        </ImageView>
-                        <Label text="Dashboard">
-                            <font>
-                                <Font name="System Bold" size="20.0" />
-                            </font>
-                        </Label>
-                    </children>
-                </HBox>
-            <Button fx:id="btnMessagePart" mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent" stylesheets="@todo.css">
+            <Button fx:id="btnDashPart" mnemonicParsing="false" onAction="#switchDashPart" prefHeight="53.0" prefWidth="300.0" styleClass="transparent" stylesheets="@dashboard.css">
+               <graphic>
+                      <HBox fx:id="overviewPart" alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="170.0" spacing="20.0">
+                          <children>
+                              <ImageView fitHeight="45.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@icons8-dashboard-48.png" />
+                                  </image>
+                              </ImageView>
+                              <Label text="Dashboard">
+                                  <font>
+                                      <Font name="System Bold" size="14.0" />
+                                  </font>
+                              </Label>
+                          </children>
+                      </HBox>
+               </graphic>
+            </Button>
+            <Button fx:id="btnMessagePart" mnemonicParsing="false" onAction="#switchChatPart" prefHeight="53.0" prefWidth="185.0" styleClass="transparent" stylesheets="@todo.css">
                <graphic>
                       <HBox fx:id="messageBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
                           <children>
@@ -47,7 +51,7 @@
                               </ImageView>
                               <Label text="Message">
                                   <font>
-                                      <Font size="20.0" />
+                                      <Font size="18.0" />
                                   </font>
                               </Label>
                           </children>
@@ -65,7 +69,7 @@
                               </ImageView>
                               <Label text="Todolist">
                                   <font>
-                                      <Font size="20.0" />
+                                      <Font size="18.0" />
                                   </font>
                               </Label>
                           </children>
@@ -83,7 +87,7 @@
                               </ImageView>
                               <Label text="Deadline">
                                   <font>
-                                      <Font size="20.0" />
+                                      <Font size="18.0" />
                                   </font>
                               </Label>
                           </children>
@@ -101,7 +105,7 @@
                               </ImageView>
                               <Label text="Insight">
                                   <font>
-                                      <Font size="20.0" />
+                                      <Font size="18.0" />
                                   </font>
                               </Label>
                           </children>
@@ -119,7 +123,7 @@
                               </ImageView>
                               <Label text="Account">
                                   <font>
-                                      <Font size="20.0" />
+                                      <Font size="18.0" />
                                   </font>
                               </Label>
                           </children>
@@ -137,7 +141,7 @@
                               </ImageView>
                               <Label text="Settings">
                                   <font>
-                                      <Font size="20.0" />
+                                      <Font size="18.0" />
                                   </font>
                               </Label>
                           </children>
@@ -231,7 +235,7 @@
                         </columns>
                     </TableView>
                     <HBox id="HBox2" alignment="CENTER" prefHeight="61.0" prefWidth="1150.0" spacing="5.0">
-                  <Button alignment="CENTER" onAction="#onRemoveButtonClick" prefHeight="41.0" prefWidth="96.0" text="ADD">
+                  <Button alignment="CENTER" onAction="#onAddButtonClick" prefHeight="41.0" prefWidth="96.0" text="ADD">
                      <HBox.margin>
                         <Insets right="40.0" />
                      </HBox.margin>

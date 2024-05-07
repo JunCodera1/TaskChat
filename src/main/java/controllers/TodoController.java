@@ -4,22 +4,24 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 
+import com.example.member.Main;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.datatype.eclipsecollections.EclipseCollectionsModule;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
+//import com.fasterxml.jackson.core.type.TypeReference;
+//import com.fasterxml.jackson.databind.ObjectMapper;
+//import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+//import com.fasterxml.jackson.datatype.eclipsecollections.EclipseCollectionsModule;
+//import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+//import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.stage.Stage;
 import org.eclipse.collections.api.factory.Lists;
 import org.eclipse.collections.api.list.MutableList;
 import org.eclipse.collections.impl.collector.Collectors2;
@@ -37,6 +39,10 @@ public class TodoController
 
     @FXML
     private TableView<ToDoItem> todoList;
+    @FXML
+    private Button btnMessagePart;
+    @FXML
+    private Button btnDashPart;
 
     @FXML
     protected void initialize()
@@ -55,7 +61,7 @@ public class TodoController
     }
 
     @FXML
-    protected void onAddButtonClick()
+    public void onAddButtonClick()
     {
         String text = this.todoItem.getText();
         ToDoCategory category = this.todoCategory.getValue();
@@ -84,56 +90,64 @@ public class TodoController
         this.todoList.getItems().add(item);
     }
 
+//    @FXML
+//    public void onRemoveButtonClick()
+//    {
+//        int indexToRemove = this.todoList.getSelectionModel().getSelectedIndex();
+//        this.todoList.getItems().remove(indexToRemove);
+//    }
     @FXML
-    protected void onRemoveButtonClick()
-    {
+    public void onRemoveButtonClick() {
         int indexToRemove = this.todoList.getSelectionModel().getSelectedIndex();
-        this.todoList.getItems().remove(indexToRemove);
+        if (indexToRemove >= 0 && indexToRemove < this.todoList.getItems().size()) {
+            this.todoList.getItems().remove(indexToRemove);
+        }
     }
+
 
     private MutableList<ToDoItem> readToDoListFromFile()
     {
-        ObjectMapper mapper = this.getObjectMapper();
+//        ObjectMapper mapper = this.getObjectMapper();
         MutableList<ToDoItem> list = null;
-        try
-        {
-            list = mapper.readValue(
-                    Paths.get("todolist.json").toFile(),
-                    new TypeReference<MutableList<ToDoItem>>() {});
-            return list;
-        }
-        catch (IOException e)
-        {
-            System.out.println(e);
-        }
+//        try
+//        {
+//            list = mapper.readValue(
+//                    Paths.get("todolist.json").toFile(),
+//                    new TypeReference<MutableList<ToDoItem>>() {});
+//            return list;
+//        }
+//        catch (IOException e)
+//        {
+//            System.out.println(e);
+//        }
         return Lists.mutable.empty();
     }
 
     public void writeToDoListToFile()
     {
-        ObjectMapper mapper = this.getObjectMapper();
+//        ObjectMapper mapper = this.getObjectMapper();
         MutableList<ToDoItem> list =
                 this.todoList.getItems().stream()
                         .collect(Collectors2.toList());
-        try
-        {
-            mapper.writeValue(
-                    Paths.get("todolist.json").toFile(),
-                    list);
-        }
-        catch (IOException e)
-        {
-            throw new RuntimeException(e);
-        }
+//        try
+//        {
+//            mapper.writeValue(
+//                    Paths.get("todolist.json").toFile(),
+//                    list);
+//        }
+//        catch (IOException e)
+//        {
+//            throw new RuntimeException(e);
+//        }
     }
 
-    private ObjectMapper getObjectMapper()
-    {
-        ObjectMapper mapper = new ObjectMapper()
-                .registerModule(new EclipseCollectionsModule())
-                .registerModule(new JavaTimeModule());
-        return mapper;
-    }
+//    private ObjectMapper getObjectMapper()
+//    {
+//        ObjectMapper mapper = new ObjectMapper()
+//                .registerModule(new EclipseCollectionsModule())
+//                .registerModule(new JavaTimeModule());
+//        return mapper;
+//    }
 
     public record ToDoItem(
             @JsonProperty String name,
@@ -184,5 +198,23 @@ public class TodoController
         {
             return this.emoji;
         }
+    }
+    private void switchScene(String fxmlPath, ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlPath));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    private void switchDashPart(ActionEvent event) throws IOException {
+        switchScene("Dashboard.fxml", event);
+        btnDashPart.setStyle("-fx-background-color: #8D8D8D");
+    }
+
+    @FXML
+    private void switchChatPart(ActionEvent event) throws IOException {
+        switchScene("ChatUI.fxml", event);
+        btnMessagePart.setStyle("-fx-background-color: #8D8D8D");
     }
 }
