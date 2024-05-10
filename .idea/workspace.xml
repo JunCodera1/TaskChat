@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="793207e7-6ba9-46dd-8113-0eae4be89222" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/ClientListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/StartServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/member/MainClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatClient.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/member/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/member/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/TodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/todolist.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/Chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/Chat.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/ChatUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/member/todo.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,20 +62,26 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
     &quot;Application.DatabaseConnection.executor&quot;: &quot;Run&quot;,
     &quot;Application.GreetingClient.executor&quot;: &quot;Run&quot;,
     &quot;Application.GreetingClient2.executor&quot;: &quot;Run&quot;,
     &quot;Application.GreetingServer.executor&quot;: &quot;Run&quot;,
     &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MyClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MyServer.executor&quot;: &quot;Run&quot;,
     &quot;Application.PasswordViewer.executor&quot;: &quot;Run&quot;,
     &quot;Application.Server.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StartServer.executor&quot;: &quot;Run&quot;,
     &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Java/Jackson/jackson-databind-2.17.0.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Downloads/PQBank-main&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -156,7 +173,17 @@
       <workItem from="1714998558125" duration="2356000" />
       <workItem from="1715017499640" duration="13000" />
       <workItem from="1715052635647" duration="569000" />
-      <workItem from="1715053247784" duration="2757000" />
+      <workItem from="1715053247784" duration="4057000" />
+      <workItem from="1715062691972" duration="4488000" />
+      <workItem from="1715082690753" duration="439000" />
+      <workItem from="1715094678225" duration="2000" />
+      <workItem from="1715164936560" duration="1032000" />
+      <workItem from="1715177394694" duration="547000" />
+      <workItem from="1715241040076" duration="3302000" />
+      <workItem from="1715254470107" duration="2111000" />
+      <workItem from="1715256598831" duration="4924000" />
+      <workItem from="1715261835316" duration="450000" />
+      <workItem from="1715332474720" duration="22000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />

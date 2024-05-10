@@ -17,7 +17,7 @@
    <left>
       <VBox alignment="CENTER" prefHeight="810.0" prefWidth="210.0" spacing="5.0" stylesheets="@dashboard.css" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false"  prefHeight="53.0" prefWidth="300.0" styleClass="transparent" stylesheets="@dashboard.css">
+            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="300.0" styleClass="transparent" stylesheets="@dashboard.css">
                <graphic>
                   <HBox fx:id="overviewPart" alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="170.0" spacing="20.0">
                      <children>
@@ -63,78 +63,6 @@
                            </image>
                         </ImageView>
                         <Label text="Todolist">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-               </graphic>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent" stylesheets="@dashboard.css">
-               <graphic>
-                  <HBox fx:id="deadlineBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
-                     <children>
-                        <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icons8-sand-clock-50.png" />
-                           </image>
-                        </ImageView>
-                        <Label text="Deadline">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-               </graphic>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent" stylesheets="@dashboard.css">
-               <graphic>
-                  <HBox fx:id="insightBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
-                     <children>
-                        <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icons8-circle-chart-50.png" />
-                           </image>
-                        </ImageView>
-                        <Label text="Insight">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-               </graphic>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent" stylesheets="@dashboard.css">
-               <graphic>
-                  <HBox fx:id="accountBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
-                     <children>
-                        <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icons8-user-50.png" />
-                           </image>
-                        </ImageView>
-                        <Label text="Account">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-               </graphic>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="185.0" styleClass="transparent" stylesheets="@dashboard.css">
-               <graphic>
-                  <HBox fx:id="settingBox" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
-                     <children>
-                        <ImageView fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icons8-setting-50.png" />
-                           </image>
-                        </ImageView>
-                        <Label text="Settings">
                            <font>
                               <Font size="18.0" />
                            </font>

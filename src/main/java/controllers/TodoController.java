@@ -39,6 +39,10 @@ public class TodoController
 
     @FXML
     private TableView<ToDoItem> todoList;
+    
+    @FXML
+    private TableColumn<ToDoItem, String> categoryColumn;
+
     @FXML
     private Button btnMessagePart;
     @FXML
@@ -209,12 +213,10 @@ public class TodoController
     @FXML
     private void switchDashPart(ActionEvent event) throws IOException {
         switchScene("Dashboard.fxml", event);
-        btnDashPart.setStyle("-fx-background-color: #8D8D8D");
     }
 
     @FXML
     private void switchChatPart(ActionEvent event) throws IOException {
         switchScene("ChatUI.fxml", event);
-        btnMessagePart.setStyle("-fx-background-color: #8D8D8D");
     }
 }

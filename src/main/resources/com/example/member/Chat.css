@@ -4,6 +4,10 @@
 .transparent-background{
     -fx-background-color: rgba(0,0,0,0);
 }
+.transparent-background:hover{
+    -fx-background-color: #F3F3F3;
+}
+/**/
 .radius{
     -fx-background-radius: 100px;
 }
@@ -23,4 +27,7 @@
 .outgoing-bubble{
     -fx-background-color: #50C984;
     -fx-background-radius: 20px;
+}
+.hover{
+
 }

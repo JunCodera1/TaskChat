@@ -12,6 +12,9 @@
 .transparent{
     -fx-background-color: rgba(0,0,0,0);
 }
+.transparent:hover{
+    -fx-background-color: #F3F3F3;
+}
 .primary-color{
     -fx-background-color: #EFF2F6;
 }
