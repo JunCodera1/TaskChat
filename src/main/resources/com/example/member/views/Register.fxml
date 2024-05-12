@@ -15,7 +15,7 @@
          <children>
             <ImageView fx:id="chatImageView" fitHeight="122.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@2.png" />
+                  <Image url="@../images/2.png" />
                </image>
             </ImageView>
             <Label layoutX="138.0" layoutY="34.0" prefHeight="54.0" prefWidth="338.0" text="User Registration" textFill="WHITE">

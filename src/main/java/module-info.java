@@ -11,6 +11,9 @@ module com.example.member {
     requires com.fasterxml.jackson.databind;
     requires com.fasterxml.jackson.datatype.jsr310;
     requires jackson.datatype.eclipse.collections;
+    requires slf4j.api;
+    requires javafx.media;
+    requires java.desktop;
 
 
     opens com.example.member to javafx.fxml;
@@ -19,4 +22,6 @@ module com.example.member {
     opens controllers to javafx.fxml;
     exports Model;
     opens Model to javafx.fxml;
+    exports bubble;
+    opens bubble to javafx.fxml;
 }
